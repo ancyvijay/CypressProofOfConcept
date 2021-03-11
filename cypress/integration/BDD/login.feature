@@ -13,8 +13,7 @@ Feature: Sign in page
  Scenario: Entering correct details should log you in successfull and can access Guide
    When I enter valid details
    Then I am logged in 
-   And when I click on Guide
-   Then I am taken to support 
+   And I can see the correct link on Guide
 
 
 #  Scenario: Connect to helpdesk link opens TeamViewer
