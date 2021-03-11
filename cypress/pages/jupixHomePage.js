@@ -17,26 +17,26 @@ class JupixHomePage {
     //     })
     // }
 
-    // clickGuide(){
-    //     cy.get("[name='iFrame1']")
-    //     .its('0.contentDocument.body').should('not.be.empty')
-    //     .then(cy.wrap)
-    //     .find('#leftFrame')
-    //     .its('0.contentDocument.body').should('not.be.empty')
-    //     .find('a[title="Guide"]')
-    //     .then(cy.wrap)
-    //     .click()
-    // }
-
-    clickGuide() {
-        cy.get("[name='iFrame1']")
-            .its('0.contentDocument.body')
-            .should('not.be.empty')
-            .then((value)=>{
-            console.log(value)
-            cy.debug()
-            })
+    clickGuide(){
+        cy.get("#mainFrameset")
+        .its('0.contentDocument.body').should('not.be.empty')
+        .then(cy.wrap)
+        .find('#leftFrame')
+        .its('0.contentDocument.body').should('not.be.empty')
+        .find('a[title="Guide"]')
+        .then(cy.wrap)
+        .click()
     }
+
+    // clickGuide() {
+    //     cy.get("[name='iFrame1']")
+    //         .its('0.contentDocument.body')
+    //         .should('not.be.empty')
+    //         .then((value)=>{
+    //         console.log(value)
+    //         cy.debug()
+    //         })
+    // }
 
 
     // clickGuide(){
