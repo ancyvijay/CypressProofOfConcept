@@ -1,0 +1,9 @@
+# Cypress generated error screenshots
+cypress/screenshots/
+
+# Dependency directories
+node_modules
+tests-output
+yarn-error.log
+screenshots
+videos

@@ -1,0 +1,20 @@
+{
+    "baseUrl": "https://www.qa.zoopla.co.uk",
+    "video": false,
+    "chromeWebSecurity": false,
+    "testFiles": "**/*.feature",
+    "reporter": "junit",
+    "screenshotsFolder": "tests-output/screenshots",
+    "reporterOptions": {
+        "mochaFile": "tests-output/reports/TEST-[hash].xml"
+    },
+    "env": {
+        "stage_url":"https://stage.jupix.co.uk/",
+        "live_url":"https://login.jupix.co.uk/"
+
+    },
+    "retries": {
+      "runMode": 2,
+      "openMode": 1
+    }
+}

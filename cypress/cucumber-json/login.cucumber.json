@@ -1,0 +1,83 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Sign in page",
+    "line": 3,
+    "id": "sign-in-page",
+    "tags": [
+      {
+        "name": "@Login",
+        "line": 1
+      }
+    ],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "sign-in-page;entering-correct-details-should-log-you-in-successfull-and-can-access-guide",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Entering correct details should log you in successfull and can access Guide",
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I visit Jupix login page",
+            "result": {
+              "status": "passed",
+              "duration": 564000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I enter valid details",
+            "result": {
+              "status": "passed",
+              "duration": 4952000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I am logged in",
+            "result": {
+              "status": "passed",
+              "duration": 77000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "when I click on Guide",
+            "result": {
+              "status": "passed",
+              "duration": 95000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I am taken to support",
+            "result": {
+              "status": "failed",
+              "duration": 4048000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected 'https://stage.jupix.co.uk/index4.php' to include 'support.jupix.com/hc/en-gb'\n    at Context.eval (https://stage.jupix.co.uk/__cypress/tests?p=cypress\\support\\index.js:14:12)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
