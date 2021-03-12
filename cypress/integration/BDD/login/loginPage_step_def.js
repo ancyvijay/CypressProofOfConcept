@@ -17,22 +17,18 @@ When("I enter valid details", function () {
 })
 
 
-//Then steps
+// Then steps
 Then("I get a login failed message", function () {
     cy.get(loginPage.login_error_message).should('be.visible').contains('Your login details are invalid. Access Denied.')
 })
 Then("I am logged in", function () {
     cy.checkUrl("/index4.php");
 })
-Then("I am taken to support", function () {
-    cy.checkUrl("support.jupix.com/hc/en-gb").should('be.true');
-})
-//And STeps
+
+// And STeps
 And("I cannot access the system", function () {
     cy.checkUrl("/?error=2");
 })
-And("when I click on Guide", function () {
-   
-    jupixHomePage.clickGuide();
-   
+And("I can see the correct link on Guide", function () {
+  jupixHomePage.checkGuideBtn();
 })
