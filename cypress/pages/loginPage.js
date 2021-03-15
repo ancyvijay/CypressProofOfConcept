@@ -19,6 +19,10 @@ class LoginPage {
      password_val= Cypress.env('stage_password');
      stage_url=Cypress.env('stage_url')
 
+    //  company_username_val= Cypress.env('live_company_name');
+    //  username_val= Cypress.env('live_username');
+    //  password_val= Cypress.env('live_password');
+    //  stage_url=Cypress.env('live_url')
 
     fill_login_details() {
         // cy.fixture("credentials").then((userData) => {
@@ -53,6 +57,7 @@ class LoginPage {
                
             }
           })
+          expect(response.status).to.eq(302)
     }
 
     fill_incorrect_login_details() {

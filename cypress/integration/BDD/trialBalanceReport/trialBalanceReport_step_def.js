@@ -9,7 +9,7 @@ import {trialBalanceReportPage} from "../../../pages/trialBalanceReportPage"
 Given("I am logged in Jupix", function () {
     cy.visit(Cypress.env('stage_url'));
    // loginPage.fill_login_details();
-   loginPage.fill_login_details_apiOnly();
+   loginPage.fill_login_details();
 })
 
 //When steps
@@ -28,7 +28,7 @@ And("I am on the Report page",function(){
 
 })
 And("I get a successful message",function(){
-trialBalanceReportPage.messageOnPage().contains("Your report has been successfully generated")
+trialBalanceReportPage.messageOnPage()
 })
 
 //Then steps

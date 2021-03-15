@@ -10,7 +10,7 @@
     },
     "env": {
         "stage_url":"https://stage.jupix.co.uk/",
-        "stage_company_name":"jupix_stag",
+        "stage_company_name":"jupix_stage",
         "stage_username": "achelleth",
         "stage_password": "ns3ozpM6JqopWcQA",
        
