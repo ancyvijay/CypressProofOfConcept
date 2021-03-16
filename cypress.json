@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://www.qa.zoopla.co.uk",
+    
     "video": false,
     "chromeWebSecurity": false,
     "testFiles": "**/*.feature",
@@ -10,7 +10,14 @@
     },
     "env": {
         "stage_url":"https://stage.jupix.co.uk/",
-        "live_url":"https://login.jupix.co.uk/"
+        "stage_company_name":"jupix_stage",
+        "stage_username": "achelleth",
+        "stage_password": "ns3ozpM6JqopWcQA",
+       
+        "live_url":"https://login.jupix.co.uk/",
+        "live_company_name":"automatedtesting",
+        "live_username":"achelleth",
+        "live_password":"password"
 
     },
     "retries": {

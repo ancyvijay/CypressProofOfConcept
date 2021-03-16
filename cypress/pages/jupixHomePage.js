@@ -1,12 +1,17 @@
 import "cypress-iframe";
 
 class JupixHomePage {
-   
+
+    guide_button = "a[title='Guide']";
+    main_iframe="iframe[name='iFrame1']";
+    master_frame="iframe[name='masterFrame']";
+    left_frame= "frame[name='leftFrame']";
+
     checkGuideBtn() {
-        cy.switchToIframe("iframe[name='iFrame1']").within((iframe) => {
-           cy.switchToIframe("iframe[name='masterFrame']").within((iframe) => {
-                cy.switchToIframe("frame[name='leftFrame']").within((iframe) => {
-                    cy.get("a[title='Guide']")
+        cy.switchToIframe(this.main_iframe).within((iframe) => {
+           cy.switchToIframe(this.master_frame).within((iframe) => {
+                cy.switchToIframe(this.left_frame).within((iframe) => {
+                    cy.get(this.guide_button)
                     .should('have.attr', 'href')
                     .and('contain', '/kb')
                 });
